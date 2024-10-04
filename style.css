@@ -1,43 +1,85 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body > * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: "Poppins", sans-serif;
+  color: #04BF68;
+  background-color: #000;
+  font-size: 20px;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  width: 50vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.title h1{
+  font-size: 40px;
+}
+
+.img {
+  width: 35vw;
+  align-items: flex-start;
+}
+
+.card{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+  background-color: #0e0e0e;
+  padding: 22px 25px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 300px;
+  width: 32%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-h1 {
-  font-size: 24px;
+.container > h1 {
+  font-size: 42px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 input {
-  width: 100%;
+  width: 80%;
   padding: 10px;
-  margin: 10px 0;
+  margin: 20px 0;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
 button {
   padding: 10px 20px;
-  background-color: #28a745;
+  background-color: #04BF68;
   color: white;
   border: none;
   border-radius: 4px;
@@ -45,7 +87,8 @@ button {
 }
 
 button:hover {
-  background-color: #218838;
+  background-color: #167236;
+  letter-spacing: 0.01rem;
 }
 
 #statusMessage {
@@ -53,3 +96,44 @@ button:hover {
   font-size: 14px;
   color: red;
 }
+
+@media only screen and  (max-width: 950px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and  (max-width: 600px) { 
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .main {
+    flex-direction: column;
+  }
+   .title > h1 {
+    display: none;
+  }
+  .title {
+    width: 100%;
+    height: 300px;
+  }
+  .card {
+    width: 300px;
+    height: 400px;
+  }
+  .container{
+    font-size: 18px;
+    height: 225px;
+    align-items: center;
+    text-align: center;
+  }
+  .container > h1{
+    font-size: 35px;
+  }
+  .title .img {
+    height: 250px;
+    width: 250px;
+  }
+} 

@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download de Áudio do YouTube</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Baixar Áudio do YouTube</h1>
-        <form id="downloadForm">
-            <label for="videoUrl">Cole o link do vídeo do YouTube:</label>
-            <input type="text" id="videoUrl" placeholder="https://www.youtube.com/watch?v=xxxxxxx">
-            <button type="submit">Baixar Áudio</button>
-        </form>
-        <p id="statusMessage"></p>
-    </div>
 
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>Abaixe Áudio do <br>YouTube</h1>
+            <img src="music-animate.svg" class="img" alt="music-ani">
+        </div>
+        <div class="card">
+            <div class="container">
+                <h1>Download</h1>
+                <form id="downloadForm">
+                    <label for="videoUrl">Cole o link do vídeo do <br>YouTube:</label>
+                    <input type="text" id="videoUrl" placeholder="https://www.youtube.com/watch?v=xxxxxxx">
+                    <button type="submit">Baixar Áudio</button>
+                </form>
+                <p id="statusMessage"></p>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
