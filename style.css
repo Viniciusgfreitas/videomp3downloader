@@ -98,7 +98,11 @@ button:hover {
 #statusMessage {
   margin-top: 15px;
   font-size: 14px;
-  color: red;
+  color: #ccc;
+}
+
+#statusMessage.error {
+  color: #ff4d4d;
 }
 
 @media only screen and  (max-width: 950px) {
